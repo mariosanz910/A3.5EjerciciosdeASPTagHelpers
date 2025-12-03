@@ -1,0 +1,15 @@
+﻿@model Movie
+
+<h2>Crear Película (Ejercicio 1)</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <!-- Label para la propiedad Title -->
+        <label asp-for="Title" class="control-label"></label>
+
+        <!-- Campo de entrada enlazado a Title -->
+        <input asp-for="Title" class="form-control" />
+
+    </div>
+    <a type="submit" asp-controller="Home" asp-action="Index" class="btn btn-primary">Guardar título</a>
+</form>
